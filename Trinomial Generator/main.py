@@ -3,9 +3,18 @@
 #TODO: Create a function that keeps track of user's score
 
 """
-My goal is to create a program that generates trinomials that asks the user to factor them. The program will randomly select integers to represent solutions and display trinomials. The range of integers is determined by the difficulty of the trinomial. The trinomials will be presented in the form ax^2+bx+c and they should be factorable in the form (x+y)(x+z) or (ax+b)(cx+d). The values for y,z,a,b,c,d are all integers meaning that the user will input integers in their solutions. The user will select the level that they want to practice in.
+My goal is to create a program that generates trinomials that asks the user to factor them. 
+The program will randomly select integers to represent solutions and display trinomials. 
+The range of integers is determined by the difficulty of the trinomial. 
+The trinomials will be presented in the form ax^2+bx+c and they should be factorable in the form (x+y)(x+z) or (ax+b)(cx+d). 
+The values for y,z,a,b,c,d are all integers meaning that the user will input integers in their solutions. 
+The user will select the level that they want to practice in.
 
-Level "a" will allow the user to input the integers y and z to get comfortable identifying the values that are used to factor a trinomial. In level "a" the user will be given hints because many students factor incorrectly because they are missing a negative. Level "b" will allow the user to practice inputting their solution as (x+y)(x+z) so that they use their skills from level "a" to factor trinomials in level "b". Level "c" and level "b" both display the number of attempts the user takes to get the answer correct. Finally, level "c" will test the users ability to not only factor but factor by grouping.
+Level "a" will allow the user to input the integers y and z to get comfortable identifying the values that are used to factor a trinomial. 
+In level "a" the user will be given hints because many students factor incorrectly because they are missing a negative. 
+Level "b" will allow the user to practice inputting their solution as (x+y)(x+z) so that they use their skills from level "a" to factor trinomials in level "b". 
+Level "c" and level "b" both display the number of attempts the user takes to get the answer correct. 
+Finally, level "c" will test the users ability to not only factor but factor by grouping.
 """
 
 import random
