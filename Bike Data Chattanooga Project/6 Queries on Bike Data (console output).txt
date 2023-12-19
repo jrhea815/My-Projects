@@ -1,0 +1,121 @@
+Python Console:
+
+Query 1: Average trip duration for each member type:
+Member Type: Customer
+Average Trip Duration: 205.52800078940274
+
+Member Type: Subscriber
+Average Trip Duration: 23.8381178765456
+
+Member Type: Dependent
+Average Trip Duration: 35.5515668202765
+
+Query 2: Top 5 most popular start station names from Oct 22 - Dec 26:
+Start Station Name: 200 River St Outdoor Chattanooga
+Total Trips: 1103
+Start Station Name: 100 Walnut St
+Total Trips: 744
+Start Station Name: 215 Broad St
+Total Trips: 550
+Start Station Name: Curtain Pole
+Total Trips: 511
+Start Station Name: Renaissance Park
+Total Trips: 472
+
+Query 3:
+The most popular location for subscribers is:
+Start Location: POINT (-85.274031 35.065416)
+End Location: POINT (-85.274031 35.065416)
+Total Trips: 1322
+Location: The Tennessee Riverwalk, Riverside Park, Chattanooga, TN 37045, United States of America
+
+Query 4: Bike trips for 'dependent' subscribers greater than 2 hours:
+Start Station ID:1363
+End Station ID:1363
+Trip Duration (min):1357.38 
+
+Start Station ID:1363
+End Station ID:1363
+Trip Duration (min):282.28 
+
+Start Station ID:1363
+End Station ID:1363
+Trip Duration (min):178.65 
+
+Start Station ID:1363
+End Station ID:1363
+Trip Duration (min):122 
+
+Start Station ID:1363
+End Station ID:1363
+Trip Duration (min):282.17 
+
+Start Station ID:1337
+End Station ID:1341
+Trip Duration (min):154.93 
+
+Start Station ID:1309
+End Station ID:1315
+Trip Duration (min):163.33 
+
+Start Station ID:1315
+End Station ID:1363
+Trip Duration (min):169.32 
+
+Start Station ID:1315
+End Station ID:1315
+Trip Duration (min):171.8 
+
+Start Station ID:1315
+End Station ID:1303
+Trip Duration (min):462.93 
+
+Start Station ID:1327
+End Station ID:1341
+Trip Duration (min):134.15 
+
+Start Station ID:1297
+End Station ID:1363
+Trip Duration (min):170.72 
+
+Start Station ID:1363
+End Station ID:1363
+Trip Duration (min):120.72 
+
+Start Station ID:1363
+End Station ID:1363
+Trip Duration (min):283.23 
+
+Query 5: Top 6 bike ids with the most trips.
+Bike ID: C00033, Total Trips: 2085
+Bike ID: C00082, Total Trips: 1975
+Bike ID: C00078, Total Trips: 1844
+Bike ID: C00023, Total Trips: 1840
+Bike ID: C00092, Total Trips: 1834
+Bike ID: C00076, Total Trips: 1834
+
+Query 6: Top 5 trip durations
+Member: Customer,
+Start: 100 Walnut St,
+End: 100 Walnut St,
+Trip Duration(min): 9666500
+
+Member: Customer,
+Start: Power Alley & Riverfront Pkwy,
+End: Power Alley & Riverfront Pkwy,
+Trip Duration(min): 8499733
+
+Member: Customer,
+Start: 200 River St Outdoor Chattanooga,
+End: 100 Walnut St,
+Trip Duration(min): 8166566.5
+
+Member: Customer,
+Start: High St & E 2nd St,
+End: High St & E 2nd St,
+Trip Duration(min): 5664200
+
+Member: Customer,
+Start: Power Alley & Riverfront Pkwy,
+End: Power Alley & Riverfront Pkwy,
+Trip Duration(min): 949811.7
