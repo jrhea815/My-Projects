@@ -5,7 +5,7 @@ st.set_page_config(layout="wide")
 
 def probability_viz():
     # Load data from a CSV file
-    csv_file_path = "C:/Users/jcmrh/Desktop/March Madness Data/mm24predictions.csv"
+    csv_file_path = "mm24predictions.csv"
     data = pd.read_csv(csv_file_path)  
 
     # Page layout
