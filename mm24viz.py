@@ -26,7 +26,7 @@ def probability_viz_1():
     # Display filtered data
     st.write(filtered_data)
 
-def probablitiy_viz_2()
+def probablitiy_viz_2():
         # Load data from a CSV file
     csv_file_path = "mm-24-predictions.csv"
     data = pd.read_csv(csv_file_path)  
