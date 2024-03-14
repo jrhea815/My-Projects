@@ -53,6 +53,9 @@ def probablitiy_viz_2()
 
 
 if __name__ == "__main__":
+    page = st.sidebar.radio("Page", ["Probability Viz 1", "Probability Viz 2"])
 
-    probability_viz_1()
-    probablitiy_viz_2()
+    if page == "Probability Viz 1":
+        probability_viz_1()
+    elif page == "Probability Viz 2":
+        probability_viz_2()
