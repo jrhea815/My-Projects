@@ -3,11 +3,38 @@ import pandas as pd
 
 st.set_page_config(layout="wide")
 
+def top_10_teams(data):
+    # Group data by Team 1 and calculate the average probability
+    team1_avg_prob = data.groupby("Team1")["Probability"].mean().reset_index()
+    team1_avg_prob.columns = ['Team', 'Avg Probability']
+
+    # Group data by Team 2 and calculate the average probability
+    team2_avg_prob = data.groupby("Team2")["Probability"].mean().reset_index()
+    team2_avg_prob.columns = ['Team', 'Avg Probability']
+
+    # Merge both dataframes to get average probability for each team
+    avg_prob_df = pd.concat([team1_avg_prob, team2_avg_prob]).groupby('Team').mean().reset_index()
+
+    # Sort teams based on average probability
+    avg_prob_df = avg_prob_df.sort_values(by='Avg Probability', ascending=False)
+
+    # Select top 10 teams
+    top_10 = avg_prob_df.head(10)
+
+    return top_10
+    
 def probability_viz_1():
     # Load data from a CSV file
     csv_file_path = "mm24predictions.csv"
     data = pd.read_csv(csv_file_path)  
 
+    # Get top 10 teams with highest average probability
+    top_10 = top_10_teams(data)
+
+    # Display ranking
+    st.header("Top 10 Teams with Highest Average Probability")
+    st.bar_chart(top_10.set_index('Team'))
+    
     # Sidebar filters
     min_prob, max_prob = st.sidebar.slider("Probability Range", 0.0, 1.0, (0.0, 1.0))
     team_filter = st.sidebar.selectbox("Select Team", data["Team1"].unique())
