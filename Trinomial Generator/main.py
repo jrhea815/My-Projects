@@ -1,3 +1,6 @@
+#TO DO: Write Doc Tests
+#TO DO: Formatting (Ex: 3+-5 as 3-5)
+
 """
 My goal is to create a program that generates trinomials that asks the user to factor them. 
 The program will randomly select integers to represent solutions and display trinomials. 
