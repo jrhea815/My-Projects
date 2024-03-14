@@ -27,13 +27,6 @@ def probability_viz_1():
     # Load data from a CSV file
     csv_file_path = "mm24predictions.csv"
     data = pd.read_csv(csv_file_path)  
-
-    # Get top 10 teams with highest average probability
-    top_10 = top_10_teams(data)
-
-    # Display ranking
-    st.header("Top 10 Teams with Highest Average Probability")
-    st.bar_chart(top_10.set_index('Team'))
     
     # Sidebar filters
     min_prob, max_prob = st.sidebar.slider("Probability Range", 0.0, 1.0, (0.0, 1.0))
