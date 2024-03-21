@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from  import logreg_predict, create_team_list  # Import the necessary functions from your existing script
+from big_dance import logreg_predict, create_team_list  # Import the necessary functions from your existing script
 
 # Function to load CSV data
 def load_data():
