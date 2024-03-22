@@ -51,7 +51,7 @@ if __name__ == "__main__":
     
     # If no team is selected, display the filtered dataframe
     if not st.session_state.team_1:
-        st.write(filtered_df)
+        st.write(df)
     
     # Select team 1
     team_1 = st.selectbox('Select Team 1', options=filtered_df['team_name_1'].unique(), key="team_1")
