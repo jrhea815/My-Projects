@@ -4,7 +4,7 @@ import pandas as pd
 csvfile = 'MM_24_Predictions_d_2.csv'
 
 #Header
-st.title('Jay's Algo for March Madness 24')
+st.title("Jay's Algo for March Madness 24")
 
 # Add a description
 st.write("""
