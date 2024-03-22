@@ -55,6 +55,9 @@ if __name__ == "__main__":
     # Filter the dataframe based on selected teams
     matchups_df = team_1_df[team_1_df['team_name_2'].isin(selected_team_2s)]
 
+    # Display the filtered data
+    st.write(matchups_df)
+
     # List of eliminated teams (example)
     eliminated_teams = big_dance_eliminated_list()
     
@@ -65,6 +68,3 @@ if __name__ == "__main__":
             st.write("- " + team)
     else:
         st.write("No teams have been eliminated.")
-        
-    # Display the filtered data
-    st.write(matchups_df)
