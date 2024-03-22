@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-csvfile = 'MM_24_Predictions_d_2.csv'
+csvfile = 'MM_24_Predictions.csv'
 
 def big_dance_eliminated_list():
     eliminated_list = [
