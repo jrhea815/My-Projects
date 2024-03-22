@@ -44,20 +44,36 @@ if __name__ == "__main__":
     # Read the CSV file
     df = pd.read_csv(csvfile)
     
-    # Select team 1
-    team_1 = st.selectbox('Select Team 1', options=df['team_name_1'].unique(), key="team_1")
+    # Select team 1 and team 2
+    team_order = st.radio('Select Team Order:', ('Team 1 First', 'Team 2 First'))
     
-    # Filter the dataframe based on selected team 1
-    team_1_df = df[df['team_name_1'] == team_1]
-    
-    # Select team 2 or multiple team 2s
-    selected_team_2s = st.multiselect('Select Team 2(s)', options=team_1_df['team_name_2'].unique(), key="team_2")
-    
-    # Filter the dataframe based on selected teams
-    matchups_df = team_1_df[team_1_df['team_name_2'].isin(selected_team_2s)]
-    
-    # Display the filtered data
-    st.write(matchups_df)
+    if team_order == 'Team 1 First':
+        # Select team 1
+        team_1 = st.selectbox('Select Team 1', options=df['team_name_1'].unique(), key="team_1")
+        
+        # Filter the dataframe based on selected team 1
+        team_1_df = df[df['team_name_1'] == team_1]
+        
+        # Select team 2 or multiple team 2s
+        selected_team_2s = st.multiselect('Select Team 2(s)', options=team_1_df['team_name_2'].unique(), key="team_2")
+        
+        # Filter the dataframe based on selected teams
+        matchups_df = team_1_df[team_1_df['team_name_2'].isin(selected_team_2s)]
+    else:
+        # Select team 2
+        team_2 = st.selectbox('Select Team 2', options=df['team_name_2'].unique(), key="team_2")
+        
+        # Filter the dataframe based on selected team 2
+        team_2_df = df[df['team_name_2'] == team_2]
+        
+        # Select team 1 or multiple team 1s
+        selected_team_1s = st.multiselect('Select Team 1(s)', options=team_2_df['team_name_1'].unique(), key="team_1")
+        
+        # Filter the dataframe based on selected teams
+        matchups_df = team_2_df[team_2_df['team_name_1'].isin(selected_team_1s)]
+
+# Display the filtered data
+st.write(matchups_df)
 
     # List of eliminated teams (example)
     eliminated_teams = big_dance_eliminated_list()
