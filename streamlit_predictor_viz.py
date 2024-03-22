@@ -3,6 +3,20 @@ import pandas as pd
 
 csvfile = 'MM_24_Predictions_d_2.csv'
 
+#Header
+st.title('Jay's Algo for March Madness 24')
+
+# Add a description
+st.write("""
+Welcome to Jay's Algo for March Madness 24! This app allows you to analyze matchups between different teams based on their probabilities of winning and losing.
+
+This algorithm uses Evan Miya's Team Rating Data and will be updated as each round moves on!
+
+Use the sliders to filter matchups based on the minimum probability of survival and defeat. Then, select two teams from the dropdown menus to view specific matchup details.
+
+Let's explore some matchups!
+""")
+
 # Read the CSV file
 df = pd.read_csv(csvfile)
 
