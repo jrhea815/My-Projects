@@ -12,9 +12,11 @@ Welcome to Jay's Algo for March Madness 24! This app allows you to analyze match
 
 This algorithm uses Evan Miya's Team Rating Data and will be updated as each round moves on!
 
-Use the sliders to filter matchups based on the minimum probability of survival and defeat. Then, select two teams from the dropdown menus to view specific matchup details.
+Select a team from the dropdown menu to view all matchups involving that team. Then, select one or more teams for the opposing side.
 
-Let's explore some matchups!
+**Please note that the "survive" column represents the probability that Team 1 survives, and the "defeat" column represents the probability that Team 1 is defeated.**
+
+For exploring matchups from the perspective of Team 2, try selecting Team 2 first and then Team 1.
 """)
 
 # Read the CSV file
