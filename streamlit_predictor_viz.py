@@ -20,18 +20,17 @@ Let's explore some matchups!
 # Read the CSV file
 df = pd.read_csv(csvfile)
 
-# Filter by probabilities
-min_survive = st.slider('Minimum Survive Probability', min_value=0.0, max_value=100.0, value=0.0)
-min_defeat = st.slider('Minimum Defeat Probability', min_value=0.0, max_value=100.0, value=0.0)
+# Select team 1
+team_1 = st.selectbox('Select Team 1', options=df['team_name_1'].unique())
 
-filtered_df = df[(df['survive'] >= min_survive) & (df['defeat'] >= min_defeat)]
+# Filter the dataframe based on selected team 1
+team_1_df = df[df['team_name_1'] == team_1]
 
-# Select team 1 and team 2
-team_1 = st.selectbox('Select Team 1', options=filtered_df['team_name_1'].unique())
-team_2 = st.selectbox('Select Team 2', options=filtered_df['team_name_2'].unique())
+# Select team 2 or multiple team 2s
+selected_team_2s = st.multiselect('Select Team 2(s)', options=team_1_df['team_name_2'].unique())
 
 # Filter the dataframe based on selected teams
-matchups_df = filtered_df[(filtered_df['team_name_1'] == team_1) & (filtered_df['team_name_2'] == team_2)]
+matchups_df = team_1_df[team_1_df['team_name_2'].isin(selected_team_2s)]
 
 # Display the filtered data
 st.write(matchups_df)
