@@ -44,7 +44,7 @@ if __name__ == "__main__":
     df = pd.read_csv(csvfile)
     
     # Select team 1
-    team_1 = st.selectbox('Select Team 1', options=filtered_df['team_name_1'].unique(), key="team_1")
+    team_1 = st.selectbox('Select Team 1', options=df['team_name_1'].unique(), key="team_1")
     
     # Filter the dataframe based on selected team 1
     team_1_df = df[df['team_name_1'] == team_1]
