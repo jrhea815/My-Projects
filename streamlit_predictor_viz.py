@@ -6,7 +6,6 @@ csvfile = 'MM_24_Predictions.csv'
 def big_dance_eliminated_list():
     eliminated_list = [
         'Mississippi State',
-        'BYU',
         'Akron',
         'Long Beach State',
         'Wagner',
@@ -21,12 +20,22 @@ def big_dance_eliminated_list():
         'Texas Tech',
         'Drake',
         'Samford'
+        'Florida Atlantic',
+        'Colgate',
+        'UAB',
+        'Western Kentucky',
+        'New Mexico',
+        'Stetson',
+        'Florida',
+        'Auburn',
+        'Nebraska',
+        'College of Charleston'
     ]
 
     return eliminated_list
 if __name__ == "__main__":
     #Header
-    st.title("Jay's Algo for March Madness 24")
+    st.title("Jay's alogrithm for March Madness 24")
     
     # Add a description
     st.write("""
