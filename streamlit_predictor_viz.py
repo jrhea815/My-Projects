@@ -33,7 +33,16 @@ def big_dance_eliminated_list():
         'College of Charleston',
         'Wisconsin',
         'Longwood',
-        'TCU'
+        'TCU',
+        "Saint Mary's",
+        'Dayton',
+        'Kansas',
+        'Michigan State',
+        'Washington State',
+        'Oakland',
+        'Duquesne',
+        'Texas',
+        'Oregon'
     ]
 
     return eliminated_list
