@@ -7,6 +7,7 @@ csvfile = 'MM_24_Predictions_Day_3.csv'
 def big_dance_eliminated_list():
     eliminated_list = [
         'Mississippi State',
+        'BYU',
         'Akron',
         'Long Beach State',
         'Wagner',
