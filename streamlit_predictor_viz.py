@@ -12,6 +12,7 @@ def big_dance_eliminated_list():
         'Long Beach State',
         'Wagner',
         'Morehead State',
+        'Grambling',
         'South Carolina',
         'Nevada',
         'Colorado State',
