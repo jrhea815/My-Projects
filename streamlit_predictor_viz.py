@@ -20,7 +20,7 @@ def big_dance_eliminated_list():
         "Saint Peter's",
         'Texas Tech',
         'Drake',
-        'Samford'
+        'Samford',
         'Florida Atlantic',
         'Colgate',
         'UAB',
