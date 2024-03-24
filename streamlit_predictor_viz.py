@@ -85,7 +85,7 @@ if __name__ == "__main__":
     eliminated_teams = big_dance_eliminated_list()
     
     # Display eliminated teams
-    st.subheader(f"Eliminated Teams({len(eliminated_teams)})")
+    st.subheader(f"Eliminated Teams")
     if eliminated_teams:
         for team in eliminated_teams:
             st.write("- " + team)
