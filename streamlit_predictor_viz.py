@@ -12,7 +12,6 @@ def big_dance_eliminated_list():
         'Long Beach State',
         'Wagner',
         'Morehead State',
-        'Grambling',
         'South Carolina',
         'Nevada',
         'Colorado State',
@@ -22,7 +21,7 @@ def big_dance_eliminated_list():
         "Saint Peter's",
         'Texas Tech',
         'Drake',
-        'Samford',
+        'Samford'
         'Florida Atlantic',
         'Colgate',
         'UAB',
@@ -44,7 +43,15 @@ def big_dance_eliminated_list():
         'Oakland',
         'Duquesne',
         'Texas',
-        'Oregon'
+        'Oregon',
+        'Colorado',
+        'Utah State',
+        'James Madison',
+        'Baylor',
+        'Grand Canyon',
+        'NorthWestern',
+        'Texas A&M',
+        'Yale'
     ]
 
     return eliminated_list
