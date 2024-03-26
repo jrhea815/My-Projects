@@ -51,7 +51,8 @@ def big_dance_eliminated_list():
         'Grand Canyon',
         'NorthWestern',
         'Texas A&M',
-        'Yale'
+        'Yale',
+        'Grambling'
     ]
 
     return eliminated_list
