@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 st.set_page_config(layout="wide")
 
-csvfile = 'MM_24_Predictions_Day_5.csv'
+csvfile = 'MM_24_Predictions.csv'
 
 def big_dance_eliminated_list():
     eliminated_list = [
