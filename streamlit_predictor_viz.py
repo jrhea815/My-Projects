@@ -52,7 +52,11 @@ def big_dance_eliminated_list():
         'NorthWestern',
         'Texas A&M',
         'Yale',
-        'Grambling'
+        'Grambling',
+        'Arizona',
+        'San Diego State',
+        'North Carolina',
+        'Illinois'
     ]
 
     return eliminated_list
