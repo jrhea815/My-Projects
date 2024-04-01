@@ -57,6 +57,13 @@ def big_dance_eliminated_list():
         'San Diego State',
         'North Carolina',
         'Illinois'
+        'Tennessee',
+        'Marquette',
+        'Gonzaga',
+        'Houston',
+        'Creighton',
+        'Clemson',
+        'Duke'
     ]
 
     return eliminated_list
