@@ -10,7 +10,7 @@ Below, you'll find a list of projects uploaded to this repository during Jayson'
 ### 1. Bike Data Project
 
 - Description: A project related to bike data analysis in Chattanooga.
-- 
+
 ### 2. Intramural Sample Database
 
 - Description: A sample database for intramural activities.
