@@ -3,7 +3,7 @@
 ## Overview
 
 This GitHub homepage serves as a repository for various projects and files managed by Jayson Rhea. 
-Below, you'll find a list of projects uploaded to this repository during Jayson's time at Southern Adventist University
+Below, you'll find a list of projects uploaded to this repository during Jayson's time as a student.
 
 ## Projects
 
